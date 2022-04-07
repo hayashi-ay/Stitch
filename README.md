@@ -52,7 +52,7 @@ Also, whether to continue processing for each error is unclear and needs to be r
 
 - Use goroutine to speed up fetch program
 
-The program is currently executed synchronously but fetch process is independent for each url, so it can be improved by execute by
+The program is currently executed synchronously but fetch process is independent for each url, so it can be improved by execute by parallel.
 
 - Many other improvement
 I use `os.ReadFile` but it loads file in memory at once, so perhaps I may read little by little. 
